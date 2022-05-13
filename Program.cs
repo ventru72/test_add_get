@@ -22,6 +22,7 @@ namespace Zapicnaya_book
         {
             save s = new save();
             int opop = 1;
+            int opop2 = 3;
 
             Console.WriteLine($"Выберите действие:");
             Console.WriteLine($"1 - Создать новый файл.\n2 - Загрузить файл из компьютера.");
