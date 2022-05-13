@@ -21,6 +21,8 @@ namespace Zapicnaya_book
        static void Сhoice()
         {
             save s = new save();
+            int opop = 1;
+            int opop1 = 1;
             Console.WriteLine($"Выберите действие:");
             Console.WriteLine($"1 - Создать новый файл.\n2 - Загрузить файл из компьютера.");
             ConsoleKey key_w = new ConsoleKey();
@@ -42,11 +44,7 @@ namespace Zapicnaya_book
                 Console.WriteLine(value);
             }
             Console.WriteLine($"\nВыберите действие:");
-            //if (Enum.IsDefined(typeof(Book), str))
-            //{
-            //    book = (Book)str;
-            //}
-            //else throw new Exception("Неверный запрос!");
+
             string str = Console.ReadLine();
             book = (Book)Enum.Parse(typeof(Book), str, ignoreCase: true);
             switch (book)
